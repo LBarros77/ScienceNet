@@ -1,72 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Primary Meta Tags -->
-    <title>Science Net</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="title" content="@@title">
-
-    <!-- Canonical SEO -->
-    <link rel="canonical" href="https://www.creative-tim.com/product/impact-design-system" />
-
-    <!--  Social tags      -->
-    <meta name="keywords" content="impact design system, design system, login, form, table, tables, calendar, card, cards, navbar, modal, icons, icons, map, chat, carousel, menu, datepicker, gallery, slider, date, sidebar, social, dropdown, search, tab, nav, footer, date picker, forms, tabs, time, button, select, input, timeline, cart, car, fullcalendar, about us, invoice, account, chat, log in, blog, profile, portfolio, landing page, ecommerce, shop, landing, register, app, contact, one page, sign up, signup, store, bootstrap 4, bootstrap4, dashboard, bootstrap 4 dashboard, bootstrap 4 design, bootstrap 4 system, bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, impact, impact ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit, impact dashboard">
-    <meta name="description" content="Kick-Start Your Development With An Awesome Design System carefully designed for your online business showcase. It comes as a complete solution, with front pages and dashboard pages included.">
-
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Impact Design System by Themesberg">
-    <meta itemprop="description" content="Kick-Start Your Development With An Awesome Design System carefully designed for your online business showcase. It comes as a complete solution, with front pages and dashboard pages included.">
-
-    <meta itemprop="image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/impact-design-system/impact-design-system-thumbnail.jpg">
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="product">
-    <meta name="twitter:site" content="@themesberg">
-    <meta name="twitter:title" content="Impact Design System by Themesberg">
-
-    <meta name="twitter:description" content="Kick-Start Your Development With An Awesome Design System carefully designed for your online business showcase. It comes as a complete solution, with front pages and dashboard pages included.">
-    <meta name="twitter:creator" content="@themesberg">
-    <meta name="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/impact-design-system/impact-design-system-thumbnail.jpg">
-
-
-    <!-- Open Graph data -->
-    <meta property="fb:app_id" content="655968634437471">
-    <meta property="og:title" content="Impact Design System by Themesberg" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://demo.themesberg.com/impact-design-system/" />
-    <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/impact-design-system/impact-design-system-thumbnail.jpg"/>
-    <meta property="og:description" content="Kick-Start Your Development With An Awesome Design System carefully designed for your online business showcase. It comes as a complete solution, with front pages and dashboard pages included." />
-    <meta property="og:site_name" content="Themesberg" />
-
-    <!-- Favicon -->
-    <!-- <link rel="apple-touch-icon" sizes="120x120" href="dashboard/assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="dashboard/assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="dashboard/assets/img/favicon/favicon-16x16.png"> -->
-    <link rel="manifest" href="dashboard/assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="dashboard/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./dashboard/assets/vendor/bootstrap/dist/css/bootstrap.min.css" type="text/css">
-    <!-- Fontawesome -->
-    <link type="text/css" href="dashboard/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-    <!-- Nucleo icons -->
-    <link rel="stylesheet" href="dashboard/assets/vendor/nucleo/css/nucleo.css" type="text/css">
-
-    <!-- Prism -->
-    <link type="text/css" href="dashboard/assets/vendor/prismjs/themes/prism.css" rel="stylesheet">
-
-    <!-- Front CSS -->
-    <link type="text/css" href=".../html&css/front/css/front.css" rel="stylesheet">
-
-    <!-- @@include('./_tracking.html') -->
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Science Net - Publicações"
+    })
 </head>
 <body>
-    
+    @@include('./_navigation.html', {
+        "path": "..",
+        "classes": "navbar-dark navbar-theme-primary"
+    })
     <main>
         <!-- Hero -->
         <section class="section-header pb-8 pb-lg-13 mb-4 mb-lg-6 bg-primary text-white">
@@ -394,71 +338,9 @@
 
     </main>
 
-    <footer class="footer section pt-6 pt-md-8 pt-lg-10 pb-3 @@classes overflow-hidden">
-        <div class="pattern pattern-soft top"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <a class="footer-brand mr-lg-5 d-flex" href="@@path_common/index.html">
-                        <img src="@@path/assets/img/brand/light.svg" height="35" class="mr-3" alt="Footer logo">
-                    </a>
-                    <p class="my-4">Create, prototype, collaborate and turn your ideas into incredible products with the definitive platform for digital design.</p>
-                    <div class="dropdown mb-4 mb-lg-0">
-                        <a id="langsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle footer-language-link">
-                            <img src="@@path/assets/img/flags/united-states-of-america.svg" alt="USA Flag" class="language-flag"> English
-                            <i class="fas fa-chevron-down ml-1"></i>
-                        </a>
-                        <div aria-labelledby="langsDropdown" class="dropdown-menu dropdown-menu-center">
-                            <a href="#" class="dropdown-item text-gray text-sm"><img src="@@path/assets/img/flags/germany.svg" alt="Germany Flag" class="language-flag"> German</a>
-                            <a href="#" class="dropdown-item text-gray text-sm"><img src="@@path/assets/img/flags/spain.svg" alt="Spain Flag" class="language-flag"> Spanish</a>
-                            <a href="#" class="dropdown-item text-gray text-sm"><img src="@@path/assets/img/flags/france.svg" alt="France Flag" class="language-flag"> French</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-3 col-lg-2 mb-4 mb-lg-0">
-                    <h6>Themesberg</h6>
-                    <ul class="links-vertical">
-                        <li><a target="_blank" href="https://themesberg.com/blog?ref=creativetim">Blog</a></li>
-                        <li><a target="_blank" href="https://themesberg.com/themes?ref=creativetim">Themes</a></li>
-                        <li><a target="_blank" href="https://themesberg.com/contact?ref=creativetim">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-3 col-lg-2 mb-4 mb-lg-0">
-                    <h6>Creative Tim</h6>
-                    <ul class="links-vertical">
-                        <li><a target="_blank" href="https://www.creative-tim.com/blog">Blog</a></li>
-                        <li><a target="_blank" href="https://www.creative-tim.com/templates">Products</a></li>
-                        <li><a target="_blank" href="https://www.creative-tim.com/support-terms">Support</a></li>
-                        <li><a target="_blank" href="https://www.creative-tim.com/license">License</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <h6>Subscribe</h6>
-                    <p class="font-small">The latest Impact news, articles, and resources, sent straight to your inbox every month.</p>
-                    <form action="#">
-                        <div class="form-row">
-                            <div class="col-8">
-                                <input type="email" class="form-control mb-2" placeholder="Email Address" name="email" required>
-                            </div>
-                            <div class="col-4">
-                                <button type="submit" class="btn btn-secondary btn-block"><span>Subscribe</span></button>
-                            </div>
-                        </div>
-                    </form>
-                    <small class="mt-2 form-text">We’ll never share your details. See our <a href="#" class="font-weight-bold text-underline">Privacy Policy</a></small>
-                </div>
-            </div>
-            <hr class="my-4 my-lg-5">
-            <div class="row">
-                <div class="col pb-4 mb-md-0">
-                    <div class="d-flex text-center justify-content-center align-items-center">
-                        <p class="font-weight-normal mb-0">© <a href="https://themesberg.com?ref=creativetim*" target="_blank">Themesberg</a> & <a href="https://creative-tim.com">Creative Tim</a> <span class="current-year"></span>. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </footer>
-    
-    </body>
-    </html>
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+
+</body>
+</html>
