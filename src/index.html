@@ -3,24 +3,24 @@
 
 <head>
   @@include('./_head.html', {
-    "path": ".",
-    "title": "Science Net - Início",
+  "path": ".",
+  "title": "Science Net - Início",
   })
 </head>
 
 <body>
   @@include('./_navigation.html', {
-    "path": ".",
-    "logo_classes": "d-none",
-    "classes": "navbar-theme-primary"
+  "path": "./",
+  "logo_classes": "d-none",
+  "classes": "navbar-theme-primary bg-primary color-secundary"
   })
 
   <main>
     @@include('./_preloader.html', {
-      "path": "."
+    "path": "."
     })
     <!-- Hero -->
-    <section class="section section-lg pt-6 line-bottom-light">
+    <section class="section section-lg pt-8 line-bottom-light">
       <div class="container">
         <div class="row justify-content-center mb-6">
           <div class="col-12 col-md-8 text-center">
@@ -108,7 +108,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 mb-md-7">
           <div class="col-12 col-md-8 text-center">
-            <h2 class="h1 font-weight-bolder mb-4">Meet our intuitive platform</h2>
+            <h2 class="h1 font-weight-bolder mb-4">Destaques</h2>
             <p class="lead">Self-Service Analytics or ad hoc reporting gives users the ability to develop rapid reports,
               empowering users to analyze their data.</p>
           </div>
@@ -267,16 +267,200 @@
         </div>
       </div>
     </section>
+    @@include('./cta/_trial.html')
+    <!-- modal -->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header align-items-center">
+            <h6 class="modal-title" id="modal-title-default"></h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Page content -->
+            <div class="card bg-primary">
+              <div class="card-header bg-transparent pb-5">
+                <div class="text-center mt-2 mb-3"><small>Sign in with</small></div>
+                <div class="btn-wrapper text-center">
+                  <a href="#" class="btn btn-neutral btn-icon">
+                    <span class="btn-inner--icon"><img src="../../assets/img/icons/common/github.svg"></span>
+                    <span class="btn-inner--text">Github</span>
+                  </a>
+                  <a href="#" class="btn btn-neutral btn-icon">
+                    <span class="btn-inner--icon"><img src="../../assets/img/icons/common/google.svg"></span>
+                    <span class="btn-inner--text">Google</span>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body px-lg-5 py-lg-5">
+                <div class="text-center mb-4">
+                  <small>Or sign in with credentials</small>
+                </div>
+                <form role="form">
+                  <div class="form-group mb-3">
+                    <div class="input-group input-group-merge input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                      </div>
+                      <input class="form-control" placeholder="Email" type="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-merge input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                      </div>
+                      <input class="form-control" placeholder="Password" type="password">
+                    </div>
+                  </div>
+                  <div class="custom-control custom-control-alternative custom-checkbox">
+                    <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+                    <label class="custom-control-label" for=" customCheckLogin">
+                      <span>Remember me</span>
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary my-4">Sign in</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Fim modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header align-items-center">
+              <h6 class="modal-title" id="modal-title-default">Terms of Service</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="row modal-body">
+              <div class="col-8">
+                <p>With less than a month to go before the European Union enacts new consumer privacy laws for its
+                  citizens, companies around the world are updating their terms of service agreements to comply.</p>
+                <p>The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is
+                  meant to ensure a common set of data rights in the European Union. It requires organizations to notify
+                  users as soon as possible of high-risk data breaches that could personally affect them.</p>
+              </div>
+              <div class="col-4">
+                <p>ffffffffffff</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary">I Got It</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="modal-register"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header align-items-center">
+              <h6 class="modal-title" id="modal-title-default"></h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Page content -->
+              <div class="card bg-primary">
+                <div class="card-header bg-transparent pb-5">
+                  <div class="text-muted text-center mt-2 mb-4"><small>Criar conta com</small></div>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-neutral btn-icon">
+                      <span class="btn-inner--icon"><img src="@@path/img/icons/common/google.svg"></span>
+                      <span class="btn-inner--text">Google</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body px-lg-5 py-lg-5">
+                  <div class="text-center text-muted mb-4">
+                    <small>Criar conta</small>
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Nome</label>
+                      <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp"
+                        placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="exemplo@demo.com">
+                      <small id="emailHelp" class="form-text text-muted">Área de conhecimento</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Área de atuação ou interesse</label>
+                      <select class="custom-select" id="exampleFormControlSelect1">
+                        <option>Ciências exatas e da terra</option>
+                        <option>Ciências biológicas</option>
+                        <option>Engenharias</option>
+                        <option>Ciências da saúde</option>
+                        <option>Ciências agrárias</option>
+                        <option value="">Linguistica, letras e artes</option>
+                        <option value="">Ciencias sociais e aplicadas</option>
+                        <option value="">Ciencias humanas</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Formação</label>
+                      <select class="custom-select" id="exampleFormControlSelect1">
+                        <option>Bacharelado</option>
+                        <option>Licenciatura</option>
+                        <option>Tecnologo</option>
+                        <option>Especialização</option>
+                        <option>MBA</option>
+                        <option value="">Mestrado</option>
+                        <option value="">Doutorado</option>
+                        <option value="">Pós-doutorado</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Senha</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Confirmar Senha</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck1">Receber
+                        notificações</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck1">Lembrar-me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim modal -->
 
   </main>
 
   @@include('./_footer.html', {
-    "path": ".",
-    "classes": "bg-primary text-white"
+  "path": ".",
+  "classes": "bg-primary text-white"
   })
-  
+
   @@include('./_scripts.html', {
-    "path": "."
+  "path": "."
   })
 </body>
 

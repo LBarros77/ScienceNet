@@ -3,15 +3,15 @@
 
 <head>
   @@include('./_head.html', {
-    "path": "../..",
-    "title": "Science Net - Editais"
+  "path": "../..",
+  "title": "Science Net - Editais"
   })
 </head>
 
 <body>
   @@include('./_navigation.html', {
-    "path": "..",
-    "classes": "navbar-dark navbar-theme-primary"
+  "path": "../..",
+  "classes": "navbar-dark navbar-theme-primary"
   })
   <main>
 
@@ -28,76 +28,143 @@
       </div>
       <div class="pattern bottom"></div>
     </section>
+
     <section class="section section-lg pt-0">
       <div class="container mt-n8 mt-lg-n13 z-2">
         <div class="row">
           <!-- Filter -->
           <sidebar class="col-3">
-            <div class="card card-sm card-body border border-light rounded mb-3">
+            <div class="form-group">
+              <select class="custom-select" id="exampleFormControlSelect1">
+                <option value="">Mais relevante</option>
+                <option value="">Mais visitados</option>
+                <option value="">Melhor avaliado</option>
+                <option value="">Noticias</option>
+              </select>
             </div>
 
-            <div class="accordion">
-              <div class="card card-sm card-body border border-light rounded mb-3">
-                  <div data-bs-target="#panel-1" class="accordion-panel-header" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
-                      <span class="h6 mb-0">Does my subscription automatically renew?</span>
-                      <span class="icon"><i class="fas fa-angle-down"></i></span>
+            <div class="accordion" id="accordionExample1">
+              <div class="card card-sm card-body shadow-sm border-soft">
+                <a href="#accordion-panel-1" data-target="#accordion-panel-1" class="accordion-panel-header"
+                  data-toggle="collapse" role="button" aria-expanded="false" aria-controls="accordion-panel-1">
+                  <span class="h6 mb-0 font-weight-bold">Áreas do comnhecimento</span>
+                  <span class="icon"><i class="fas fa-plus"></i></span>
+                </a>
+                <div class="collapse" id="accordion-panel-1">
+                  <div class="pt-3">
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck2">Ciências exatas e da
+                        terra
+                      </label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck3" checked>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck3">Ciências biológicas
+                      </label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck4" disabled>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck4">Engenharias</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck5" disabled checked>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck5">Ciências da saúde
+                      </label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck2">Ciências
+                        agrárias</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck3" checked>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck3">Linguistica, letras e
+                        artes
+                      </label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck4" disabled>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck4">Ciencias sociais e
+                        aplicadas</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck5" disabled checked>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck5">Ciencias humanas</label>
+                    </div>
                   </div>
-                  <div class="collapse" id="panel-1">
-                      <div class="pt-3">
-                          <p class="mb-0">
-                              At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
-                          </p>
-                      </div>
-                  </div>
+                </div>
               </div>
-              <div class="card card-sm card-body border border-light rounded mb-3">
-                  <div data-bs-target="#panel-2" class="accordion-panel-header" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-2">
-                      <span class="h6 mb-0">What happens if I don’t renew my license?</span>
-                      <span class="icon"><i class="fas fa-angle-down"></i></span>
+              <div class="card card-sm card-body shadow-sm border-soft">
+                <a href="#accordion-panel-2" data-target="#accordion-panel-2" class="accordion-panel-header"
+                  data-toggle="collapse" role="button" aria-expanded="false" aria-controls="accordion-panel-2">
+                  <span class="h6 mb-0 font-weight-bold">Formação</span>
+                  <span class="icon"><i class="fas fa-plus"></i></span>
+                </a>
+                <div class="collapse" id="accordion-panel-2">
+                  <div class="pt-3">
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck2">Bacharelado</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck3">Licenciatura</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck4">Tecnologo</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck5">Especialização</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck2">MBA</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck3">Mestrado</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck4">Doutorado</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck5">Pós-doutorado</label>
+                    </div>
                   </div>
-                  <div class="collapse" id="panel-2">
-                      <div class="pt-3">
-                          <p class="mb-0">
-                              At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        </p>
-                      </div>
-                  </div>
+                </div>
               </div>
-              <div class="card card-sm card-body border border-light rounded mb-3">
-                  <div data-bs-target="#panel-3" class="accordion-panel-header" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-3">
-                      <span class="h6 mb-0">Can I cancel my subscription?</span>
-                      <span class="icon"><i class="fas fa-angle-down"></i></span>
+              <div class="card card-sm card-body shadow-sm border-soft">
+                <a href="#accordion-panel-3" data-target="#accordion-panel-3" class="accordion-panel-header"
+                  data-toggle="collapse" role="button" aria-expanded="false" aria-controls="accordion-panel-3">
+                  <span class="h6 mb-0 font-weight-bold">Região</span>
+                  <span class="icon"><i class="fas fa-plus"></i></span>
+                </a>
+                <div class="collapse" id="accordion-panel-3">
+                  <div class="pt-3">
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck2">---</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck3" checked>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck3">Check me out</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck4" disabled>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck4">Disabled
+                        checkbox</label>
+                    </div>
+                    <div class="form-group form-check mt-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck5" disabled checked>
+                      <label class="form-check-label form-check-sign-white" for="exampleCheck5">Disabled checked</label>
+                    </div>
                   </div>
-                  <div class="collapse" id="panel-3">
-                      <div class="pt-3">
-                          <p class="mb-0">
-                              At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        </p>
-                      </div>
-                  </div>
-              </div>
-              <div class="card card-sm card-body border border-light rounded mb-3">
-                  <div data-bs-target="#panel-4" class="accordion-panel-header" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-4">
-                      <span class="h6 mb-0">Do I need to renew my license to receive fixes?</span>
-                      <span class="icon"><i class="fas fa-angle-down"></i></span>
-                  </div>
-                  <div class="collapse" id="panel-4">
-                      <div class="pt-3">
-                          <p class="mb-0">
-                              At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.                                        </p>
-                      </div>
-                  </div>
-              </div>
-              <div class="card card-sm card-body border border-light rounded mb-3">
-                  <div data-bs-target="#panel-5" class="accordion-panel-header" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-5">
-                      <span class="h6 mb-0">Where can I find the End User License Agreement (EULA)?</span>
-                      <span class="icon"><i class="fas fa-angle-down"></i></span>
-                  </div>
-                  <div class="collapse" id="panel-5">
-                      <div class="pt-3">
-                          <p class="mb-0">
-                              At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
-                          </p>
-                      </div>
-                  </div>
+                </div>
               </div>
             </div>
           </sidebar>
@@ -105,7 +172,7 @@
           <!-- Editais -->
           <article class="col">
             <div class="row">
-              <div class="col-12 col-md-12 col-lg-6 col-xxl-4 card mb-3">
+              <div class="col-12 card mb-3">
                 <div class="row g-0">
                   <div class="col-md-4">
                     <img src="..." class="img-fluid rounded-start" alt="...">
@@ -113,27 +180,18 @@
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <div class="row justify-content-around">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <button type="button" class="btn btn-secondary mb-3" data-toggle="modal"
+                          data-target="#modal-default">Toggle modal</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-12 col-lg-6 col-xxl-4 card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-12-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-12 col-lg-6 col-xxl-4 card mb-3">
+              <div class="col-12 card mb-3">
                 <div class="row g-0">
                   <div class="col-md-4">
                     <img src="..." class="img-fluid rounded-start" alt="...">
@@ -141,7 +199,23 @@
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
                       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
@@ -150,51 +224,154 @@
             </div>
           </article>
           <!-- Fim Editais -->
-        </div>
-      </div>
-    </section>
-    <section class="section section-lg pt-0 line-bottom-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 text-center px-4 mb-5 mb-lg-0">
-            <div class="icon icon-sm icon-shape icon-shape-primary rounded mb-4">
-              <i class="fas fa-envelope-open-text"></i>
-            </div>
-            <h5 class="mb-3">Email us</h5>
-            <p>
-              Email us for general queries, including marketing and partnership opportunities.
-            </p>
-            <a class="font-weight-bold text-primary" href="#">office@company.com</a>
-          </div>
-          <div class="col-12 col-md-4 text-center px-4 mb-5 mb-lg-0">
-            <div class="icon icon-sm icon-shape icon-shape-primary rounded mb-4">
-              <i class="fas fa-phone-volume"></i>
-            </div>
-            <h5 class="mb-3">Call us</h5>
-            <p>
-              Call us to speak to a member of our team.We are always happy to help you.
-            </p>
-            <a class="font-weight-bold text-primary" href="#">+1 (234) 567890</a>
-          </div>
-          <div class="col-12 col-md-4 text-center px-4">
-            <div class="icon icon-sm icon-shape icon-shape-primary rounded mb-4">
-              <i class="fas fa-headset"></i>
-            </div>
-            <h5 class="mb-3">Support</h5>
-            <p>
-              Technical support for each product is given directly by the creators of Themesberg.
-            </p>
-            <a class="btn btn-sm btn-outline-primary" href="#">
-              Support Center
-              <span class="fas fa-long-arrow-alt-right ml-2"></span>
-            </a>
+          <div class="col-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header align-items-center">
+              <h6 class="modal-title" id="modal-title-default">Terms of Service</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="row modal-body">
+              <div class="col-8">
+                <p>With less than a month to go before the European Union enacts new consumer privacy laws for its
+                  citizens, companies around the world are updating their terms of service agreements to comply.</p>
+                <p>The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is
+                  meant to ensure a common set of data rights in the European Union. It requires organizations to notify
+                  users as soon as possible of high-risk data breaches that could personally affect them.</p>
+              </div>
+              <div class="col-4">
+                <p>ffffffffffff</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary">I Got It</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="modal-register"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header align-items-center">
+              <h6 class="modal-title" id="modal-title-default"></h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Page content -->
+                <div class="card bg-primary">
+                  <div class="card-header bg-transparent pb-5">
+                    <div class="text-muted text-center mt-2 mb-4"><small>Criar conta com</small></div>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-neutral btn-icon">
+                        <span class="btn-inner--icon"><img src="@@path/img/icons/common/google.svg"></span>
+                        <span class="btn-inner--text">Google</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body px-lg-5 py-lg-5">
+                    <div class="text-center text-muted mb-4">
+                      <small>Criar conta</small>
+                    </div>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Nome</label>
+                        <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Digite seu nome">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemplo@demo.com">
+                          <small id="emailHelp" class="form-text text-muted">Área de conhecimento</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Área de atuação ou interesse</label>
+                        <select class="custom-select" id="exampleFormControlSelect1">
+                          <option>Ciências exatas e da terra</option>
+                          <option>Ciências biológicas</option>
+                          <option>Engenharias</option>
+                          <option>Ciências da saúde</option>
+                          <option>Ciências agrárias</option>
+                          <option value="">Linguistica, letras e artes</option>
+                          <option value="">Ciencias sociais e aplicadas</option>
+                          <option value="">Ciencias humanas</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Formação</label>
+                        <select class="custom-select" id="exampleFormControlSelect1">
+                          <option>Bacharelado</option>
+                          <option>Licenciatura</option>
+                          <option>Tecnologo</option>
+                          <option>Especialização</option>
+                          <option>MBA</option>
+                          <option value="">Mestrado</option>
+                          <option value="">Doutorado</option>
+                          <option value="">Pós-doutorado</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Senha</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div> 
+                      <div class="form-group form-check mt-3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label form-check-sign-white" for="exampleCheck1">Receber notificações</label>
+                      </div>
+                      <div class="form-group form-check mt-3">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label form-check-sign-white" for="exampleCheck1">Lembrar-me</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim modal -->
     </section>
 
     @@include('./_footer.html', {
-      "path": "..",
+    "path": "..",
     "classes": "bg-primary text-white"
     })
 
@@ -205,4 +382,5 @@
   })
 
 </body>
+
 </html>

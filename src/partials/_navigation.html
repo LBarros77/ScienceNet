@@ -7,29 +7,31 @@
             <h1>Science Net</h1>
           </div>
         </div>
-        <h1>Science Net</h1>
+        <h1 class="" style="color:aliceblue">Science Net</h1>
         <ul class="navbar-nav navbar-nav-hover justify-content-center align-items-center">
           <li class="nav-item">
             <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Campo de pesquisa">
           </li>
           <li class="nav-item">
-            <a href="/index.html" class="nav-link">Início</a>
+            <a href="/index.html" class="nav-link" style="color:aliceblue">Início</a>
           </li>
           <li class="nav-item dropdown">
             <a href="@@path/html/pages/publicacoes.html" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
               aria-expanded="false" aria-label="Toggle pages menu item">
-              <span class="nav-link-inner-text">Publicações</span>
-              <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
+              <span class="nav-link-inner-text" style="color:aliceblue">Páginas</span>
+              <span class="fas fa-angle-down nav-link-arrow ml-2" style="color:aliceblue"></span>
             </a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="@@path/html/pages/editais.html">Publicações</a></li>
               <li><a class="dropdown-item" href="@@path/html/pages/publicacoes.html">Todas</a></li>
-              <li><a class="dropdown-item" href="@@path/html/pages/editais.html">Editais</a></li>
               <li><a class="dropdown-item" href="#">Pricing</a></li>
               <li><a class="dropdown-item" href="#">Contact</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0" data-bs-toggle="tab" href="#"><span class="icon-secondary"><span class="far fa-user-circle me-2"></span> Profile</a>
+            <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#modal-login">Logar</button>
+            <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#modal-register">Cadastrar</button>
+            <!-- <a class="nav-link mb-sm-3 mb-md-0" data-toggle="tab" href="#"><span class="icon-secondary"></span> Profile</a> -->
           </li>
         </ul>
       </div>
